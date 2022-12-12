@@ -20,7 +20,7 @@ const TopChartCard =({i, song, isPlaying, activeSong, handlePauseClick, handlePl
          <Link to={`/songs/${song.key}`}>
           <p className='text-xl font-bold text-white'>{song?.title}</p>
          </Link>
-         <Link to={`/artists/${song?.artists[0].adamid}`}>
+         <Link to={`/artists/${song?.artists?.adamid}`}>
           <p className='text-base  text-gray-500 mt-1'>{song?.subtitle}</p>
          </Link>
 
